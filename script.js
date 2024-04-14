@@ -43,7 +43,7 @@ function validateForm() {
     }
 
     if (!validateCep(cep)) {
-        alert("Por favor, insira seu cep no formato XXXXX-XX");
+        alert("Por favor, insira seu cep no formato XXXXX-XXX");
         return;
     }
 
