@@ -26,6 +26,12 @@ img {
     border: none;
 }
 
+#content-image {
+    background-image: url(img/churrascometro.jpg);
+    background-size: cover;
+
+}
+
 #content-image,
 #content-data {
     width: 50%;
@@ -147,18 +153,18 @@ table tr td {
     background-color: #444;
 }
 
-a{
+a {
     text-decoration: none;
     color: #4f4f4f;
 
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
 footer {
-    width: 100%;
+    width: 95vw;
     height: 30px;
     color: #4f4f4f;
     display: flex;
@@ -166,4 +172,57 @@ footer {
     justify-content: center;
     margin: -75px 0;
 }
-  
+
+@media screen and (max-width: 480px) {
+    .content {
+        background-color: rgb(35, 35, 35);
+        flex-direction: column;
+        width: 95%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #content-image {
+        width: 90vw;
+        height: 40vh;
+        background-image: url(img/churrascometro-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #content-data {
+        width: 100%;
+    }
+
+    #form-data,
+    #form-total,
+    #form-results {
+        margin: 5px 2px;
+    }
+
+    #form-results{
+        margin: 0 auto;
+    }
+
+    .form-field {
+        margin: 10px 0;
+    }
+
+    #btn-data {
+        margin: 0;
+    }
+
+    footer p {
+        font-size: 13px;
+        width: 80vw;
+        color: #8a8a8a;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    footer a {
+        color: #8a8a8a;
+    }
+}
